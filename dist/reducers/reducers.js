@@ -14,6 +14,10 @@ exports.default = (state = INITIAL_STATE, action) => {
             return Object.assign({}, state, { portfolio: action.payload });
         case action_types_1.LEDGER:
             return Object.assign({}, state, { ledger: action.payload });
+        case action_types_1.EXCHANGE_SEND:
+            return Object.assign({}, state, { ledger: action.payload });
+        case action_types_1.EXCHANGE_RECEIVE:
+            return Object.assign({}, state, { ledger: action.payload });
         default:
             return state;
     }

@@ -1,4 +1,6 @@
 import {
+  EXCHANGE_RECEIVE,
+  EXCHANGE_SEND,
   LEDGER,
   PORTFOLIO,
   USERNAME
@@ -17,6 +19,10 @@ export default (state = INITIAL_STATE, action: any) => {
     case PORTFOLIO:
       return { ...state, portfolio: action.payload }
     case LEDGER:
+      return { ...state, ledger: action.payload }
+    case EXCHANGE_SEND:
+      return { ...state, ledger: action.payload }
+    case EXCHANGE_RECEIVE:
       return { ...state, ledger: action.payload }
     default:
       return state

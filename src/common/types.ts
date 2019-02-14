@@ -21,3 +21,9 @@ export interface LedgerEntry {
   XMR: BigNumber,
   created: Date
 }
+
+export interface CoinPrice {
+  name: CoinName,
+  usdPrice: BigNumber
+  btcPrice: BigNumber
+}

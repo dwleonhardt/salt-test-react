@@ -25,4 +25,24 @@ exports.CurrentLedger = (ledger) => {
         }
     };
 };
+exports.ExchangeSend = (price) => {
+    return {
+        type: action_types_1.EXCHANGE_SEND,
+        payload: {
+            currency: price.name,
+            usdPrice: price.usdPrice,
+            btcPrice: price.btcPrice
+        }
+    };
+};
+exports.ExchangeRecieve = (price) => {
+    return {
+        type: action_types_1.EXCHANGE_RECEIVE,
+        payload: {
+            currency: price.name,
+            usdPrice: price.usdPrice,
+            btcPrice: price.btcPrice
+        }
+    };
+};
 //# sourceMappingURL=actions.js.map
