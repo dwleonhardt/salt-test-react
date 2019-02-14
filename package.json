@@ -1,0 +1,56 @@
+{
+  "name": "salt-test-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server/index.js",
+    "tsc": "echo '\ncompiling typescript\n' && tsc",
+    "build": "NODE_ENV=production webpack --config ./webpack.prod.config.js --progress --colors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwleonhardt/salt-test-react.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dwleonhardt/salt-test-react/issues"
+  },
+  "homepage": "https://github.com/dwleonhardt/salt-test-react#readme",
+  "dependencies": {
+    "@types/express": "^4.16.1",
+    "@types/react": "^16.8.2",
+    "@types/react-dom": "^16.8.0",
+    "bignumber.js": "^8.0.2",
+    "express": "^4.16.4",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
+    "react-redux": "^5.1.1",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6"
+  },
+  "devDependencies": {
+    "@types/node": "^7.0.5",
+    "@types/react-redux": "^7.0.1",
+    "@types/react-router-dom": "^4.3.1",
+    "@types/redux-logger": "^3.0.6",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2017": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "bable-loader": "0.0.1-security",
+    "css-loader": "^0.28.11",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^0.21.0",
+    "typescript": "^3.3.3",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.1.5",
+    "webpack-dev-middleware": "^3.1.2",
+    "webpack-hot-middleware": "^2.22.1"
+  }
+}
